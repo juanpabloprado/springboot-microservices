@@ -1,5 +1,6 @@
 package com.juanpabloprado.employeeservice.employee;
 
+import com.juanpabloprado.employeeservice.department.DepartmentResponse;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,10 +10,7 @@ import lombok.Setter;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class EmployeeResponse {
-    private long id;
-    private String firstName;
-    private String lastName;
-    private String email;
-    private String departmentCode;
+public class ApiResponse {
+    private EmployeeResponse employee;
+    private DepartmentResponse department;
 }

@@ -23,8 +23,8 @@ public class EmployeeController {
     }
 
     @GetMapping("{id}")
-    public ResponseEntity<EmployeeResponse> getEmployeeById(@PathVariable long id) {
-        EmployeeResponse employeeById = employeeService.getEmployeeById(id);
+    public ResponseEntity<ApiResponse> getEmployeeById(@PathVariable long id) {
+        ApiResponse employeeById = employeeService.getEmployeeById(id);
         if (employeeById == null) {
             return ResponseEntity.notFound().build();
         }

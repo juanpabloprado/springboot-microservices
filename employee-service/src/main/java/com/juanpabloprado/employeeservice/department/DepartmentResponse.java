@@ -1,4 +1,4 @@
-package com.juanpabloprado.employeeservice.employee;
+package com.juanpabloprado.employeeservice.department;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,10 +9,9 @@ import lombok.Setter;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class EmployeeResponse {
+public class DepartmentResponse {
     private long id;
-    private String firstName;
-    private String lastName;
-    private String email;
+    private String departmentName;
+    private String departmentDescription;
     private String departmentCode;
 }
