@@ -1,10 +1,10 @@
 package com.juanpabloprado.departmentservice.department;
 
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class DepartmentService {
     private final DepartmentRepository departmentRepository;
 
